@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous joindre - AfriTech Elite</title>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/afritech-elite/nous-joindre/style.css">
+    <script src="/afritech-elite/nous-joindre/script.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+    <div class="nav-container">
+        <div class="logo-block">
+            <img src="/afritech-elite/nous-joindre/icons/logo.jpg" alt="AfriTech Elite" class="brand-logo" width="40" height="40">
+            <span class="logo">AfriTech Elite //</span>
+        </div>
+        <div class="nav-right">
+            <button class="menu-toggle-btn" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNavigation">
+                <img src="/afritech-elite/nous-joindre/icons/menu-deroulant.png" alt="" aria-hidden="true" width="20" height="20"> Menu
+            </button>
+            <nav id="siteNavigation">
+                <ul>
+                    <li><a href="/afritech-elite/accueil/index.html">Accueil</a></li>
+                    <li><a href="/afritech-elite/formations/index.html">Formations</a></li>
+                    <li><a href="/afritech-elite/evenements/index.html">Événements</a></li>
+                    <li><a href="/afritech-elite/equipes/index.html">Équipes</a></li>
+                    <li><a href="/afritech-elite/nous-joindre/index.html">Nous joindre</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+                <img src="/afritech-elite/nous-joindre/icons/nouvelle-lune.png" alt="" aria-hidden="true" width="20" height="20">
+            </button>
+        </div>
+    </div>
+</header>
+
+    <section class="contact-section">
+
+        <div class="contact-header">
+            <h1>Nous joindre</h1>
+            <p>Vous souhaitez développer vos compétences numériques, collaborer avec AfriTech Elite ou en savoir plus
+                sur nos programmes. Contactez-nous via nos réseaux sociaux ou laissez-nous un message. Ensemble,
+                bâtissons l'avenir numérique de l'Afrique.</p>
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://wa.me/229XXXXXXXX" target="_blank" class="social-card whatsapp">
+                <img src="/afritech-elite/nous-joindre/icons/whatsapp.png" alt="WhatsApp" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>WhatsApp</h3>
+                    <span>Discutez avec notre équipe</span>
+                </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@afritechelite" target="_blank" class="social-card tiktok">
+                <img src="/afritech-elite/nous-joindre/icons/tic-tac.png" alt="TikTok" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>TikTok</h3>
+                    <span>Découvrez nos contenus</span>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/afritechelite" target="_blank" class="social-card facebook">
+                <img src="/afritech-elite/nous-joindre/icons/facebook.png" alt="Facebook" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>Facebook</h3>
+                    <span>Suivez notre actualité</span>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/afritechelite" target="_blank" class="social-card instagram">
+                <img src="/afritech-elite/nous-joindre/icons/instagram.png" alt="Instagram" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>Instagram</h3>
+                    <span>Suivez nos stories</span>
+                </div>
+            </a>
+
+            <a href="mailto:contact@afritechelite.com" class="social-card email">
+                <img src="/afritech-elite/nous-joindre/icons/email.png" alt="E-mail" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>E-mail</h3>
+                    <span>Écrivez-nous à tout moment</span>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ton-profil" target="_blank" class="social-card linkedin">
+                <img src="/afritech-elite/nous-joindre/icons/linkedin.png" alt="LinkedIn" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>LinkedIn</h3>
+                    <span>Réseau professionnel</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/c/AfriTechElite" target="_blank" class="social-card youtube">
+                <img src="/afritech-elite/nous-joindre/icons/youtube.png" alt="YouTube" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>YouTube</h3>
+                    <span>Abonnez-vous à notre chaîne</span>
+                </div>
+            </a>
+
+            <a href="https://t.me/VotreNomUtilisateur" target="_blank" class="social-card telegram">
+                <img src="/afritech-elite/nous-joindre/icons/telegramme.png" alt="Telegram" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>Telegram</h3>
+                    <span>Rejoignez notre communauté</span>
+                </div>
+            </a>
+
+            <a href="https://discord.gg/TONCODE" target="_blank" class="social-card discord">
+                <img src="/afritech-elite/nous-joindre/icons/discorde.png" alt="Discord" style="width: 65px; height: 65px; border-radius: 50%;">
+                <div>
+                    <h3>Rejoignez notre Discord</h3>
+                    <span>Échangez avec la communauté AfriTech Elite</span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Votre prénom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre adresse e-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Pôle d'excellence pour l'émancipation technologique africaine.</p>
+    </footer>
+
+<button id="backToTop" title="Retour en haut">
+    ↑
+</button>
+</body>
+
+</html>

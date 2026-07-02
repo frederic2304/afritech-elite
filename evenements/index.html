@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - AfriTech Elite</title>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/afritech-elite/evenements/style.css">
+    <script src="/afritech-elite/evenements/script.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+    <div class="nav-container">
+        <div class="logo-block">
+            <img src="/afritech-elite/evenements/icons/logo.jpg" alt="AfriTech Elite" class="brand-logo" width="40" height="40">
+            <span class="logo">AfriTech Elite //</span>
+        </div>
+        <div class="nav-right">
+            <button class="menu-toggle-btn" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNavigation">
+                <img src="/afritech-elite/evenements/icons/menu-deroulant.png" alt="" aria-hidden="true" width="20" height="20"> Menu
+            </button>
+            <nav id="siteNavigation">
+                <ul>
+                    <li><a href="/afritech-elite/accueil/index.html">Accueil</a></li>
+                    <li><a href="/afritech-elite/formations/index.html">Formations</a></li>
+                    <li><a href="/afritech-elite/evenements/index.html">Événements</a></li>
+                    <li><a href="/afritech-elite/equipes/index.html">Équipes</a></li>
+                    <li><a href="/afritech-elite/nous-joindre/index.html">Nous joindre</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+                <img src="/afritech-elite/evenements/icons/nouvelle-lune.png" alt="" aria-hidden="true" width="20" height="20">
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- HERO -->
+    <section class="page-hero"></section>
+
+    <main class="main-content">
+
+        <h2 class="section-title">Événements à venir</h2>
+
+        <div class="events-grid" id="eventsGrid">
+
+            <!-- Cours de Trading -->
+            <div class="event-card" data-category="formation">
+                <div class="event-img-wrapper">
+                    <img src="/afritech-elite/evenements/images/trading.jpg" alt="Cours de Trading marchés financiers">
+                    <div class="event-img-overlay"></div>
+                    <span class="event-badge badge-trading">Formation</span>
+                </div>
+                <div class="event-body">
+                    <div class="event-date-row"> <img src="/afritech-elite/evenements/icons/horloge.png" alt="Date de l'événement" style="width: 20px; height: 20px; border-radius: 50%;"> Prochainement</div>
+                    <h3>Cours de Trading</h3>
+                    <p>Apprenez les fondamentaux et les stratégies avancées des marchés financiers lors de notre
+                        prochain cursus intensif.</p>
+                    <div class="event-footer">
+                        <span class="event-location-text"><img class="place-icon" src="/afritech-elite/evenements/icons/place.png" alt="Lieu de l'événement" style="width: 30px; height: 30px; border-radius: 50%;"> En ligne Google
+                            Meet</span>
+                        <button class="event-register-btn soon"
+                            onclick="">À venir</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hackathon IA Entreprise -->
+            <div class="event-card" data-category="hackathon">
+                <div class="event-img-wrapper">
+                    <img src="/afritech-elite/evenements/images/hackathon-ia.jpg" alt="Hackathon IA Entreprise intelligence artificielle">
+                    <div class="event-img-overlay"></div>
+                    <span class="event-badge badge-ia-hackathon">Hackathon</span>
+                </div>
+                <div class="event-body">
+                    <div class="event-date-row"><img src="/afritech-elite/evenements/icons/horloge.png" alt="Date de l'événement" style="width: 20px; height: 20px; border-radius: 50%;"> Prochainement</div>
+                    <h3>Hackathon IA Entreprise</h3>
+                    <p>Challenge : Concevoir une IA sur-mesure capable d'intégrer et d'analyser l'ensemble des données
+                        d'une entreprise pour répondre spécifiquement à ses besoins métiers.</p>
+                    <div class="event-footer">
+                        <span class="event-location-text"><img class="place-icon" src="/afritech-elite/evenements/icons/place.png" alt="Lieu de l'événement" style="width: 30px; height: 30px; border-radius: 50%;"> En ligne Google
+                            Meet</span>
+                        <button class="event-register-btn soon"
+                            onclick="">À venir</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ÉVÉNEMENTS PASSÉS -->
+        <div class="past-section">
+            <h2 class="section-title">Événements passés</h2>
+            <p class="section-intro">Retrouvez les replays et ressources de nos précédents événements.</p>
+            <div class="past-grid">
+
+
+
+
+            </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="newsletter-box">
+            <h3><img src="/afritech-elite/evenements/icons/sabonner.png" alt="Date de l'événement" style="width: 50px; height: 50px; border-radius: 50%;"> Ne manquez aucun événement</h3>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les annonces en avant-première.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Votre adresse e-mail">
+                <button onclick="">S'abonner</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Pôle d'excellence pour l'émancipation technologique africaine.</p>
+    </footer>
+
+    <button id="backToTop" title="Retour en haut">
+    ↑
+</button>
+</body>
+
+</html>

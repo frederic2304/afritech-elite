@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membres - AfriTech Elite</title>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/afritech-elite/equipes/style.css">
+    <script src="/afritech-elite/equipes/script.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+    <div class="nav-container">
+        <div class="logo-block">
+            <img src="/afritech-elite/equipes/icons/logo.jpg" alt="AfriTech Elite" class="brand-logo" width="40" height="40">
+            <span class="logo">AfriTech Elite //</span>
+        </div>
+        <div class="nav-right">
+            <button class="menu-toggle-btn" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNavigation">
+                <img src="/afritech-elite/equipes/icons/menu-deroulant.png" alt="" aria-hidden="true" width="20" height="20"> Menu
+            </button>
+            <nav id="siteNavigation">
+                <ul>
+                    <li><a href="/afritech-elite/accueil/index.html">Accueil</a></li>
+                    <li><a href="/afritech-elite/formations/index.html">Formations</a></li>
+                    <li><a href="/afritech-elite/evenements/index.html">Événements</a></li>
+                    <li><a href="/afritech-elite/equipes/index.html">Équipes</a></li>
+                    <li><a href="/afritech-elite/nous-joindre/index.html">Nous joindre</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+                <img src="/afritech-elite/equipes/icons/nouvelle-lune.png" alt="" aria-hidden="true" width="20" height="20">
+            </button>
+        </div>
+    </div>
+</header>
+
+    <!-- HERO -->
+    <section class="page-hero"></section>
+
+    <main class="main-content">
+
+        <!-- ÉQUIPE -->
+        <h2 class="section-title">L'équipe</h2>
+        <section style="padding: 4rem 0;">
+            <div class="team-profile-grid">
+                <!-- CADRE TEXTE À GAUCHE -->
+                <div
+                    style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--cyber-blue-light); border-radius: 18px; padding: 2.5rem;">
+
+                    <div
+                        style="color: var(--cyber-blue-light); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.5rem;">
+
+                    </div>
+                    <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1.25rem;">
+                        Kotchami Frédéric<span style="color: var(--cyber-blue-light);"> OFIE</span>
+                    </h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 1.5rem;">
+                        Pilote les parcours pédagogiques, coordonne les mentors et supervise l'accompagnement des
+                        étudiants.
+                    </p>
+                    <a href="#" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <img src="/afritech-elite/equipes/icons/yeux.png" alt="Voir" style="width: 20px; height: 20px;"> Voir
+                    </a>
+                </div>
+                <div class="founder-image-side">
+                    <img src="/afritech-elite/equipes/images/frederic.jpg" alt="Mr Frederic" class="founder-img">
+                    <div class="certified-badge">
+                        <div class="certified-icon">⭐</div>
+                        <div class="certified-text">
+                            <h4></h4>
+                            <p>AfriTech Elite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="team-profile-grid">
+                <!-- CADRE TEXTE À GAUCHE -->
+                <div
+                    style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--cyber-blue-light); border-radius: 18px; padding: 2.5rem;">
+
+                    <div
+                        style="color: var(--cyber-blue-light); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.5rem;">
+
+                    </div>
+                    <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1.25rem;">
+                        Merveille<span style="color: var(--cyber-blue-light);"> EZIN</span>
+                    </h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 1.5rem;">
+                        Assure la gestion administrative, financière et logistique, organise les événements et veille au bon fonctionnement des activités de l'organisation.
+                    </p>
+                    <a href="#" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <img src="/afritech-elite/equipes/icons/yeux.png" alt="Voir" style="width: 20px; height: 20px;"> Voir
+                    </a>
+                </div>
+                <div class="founder-image-side">
+                    <img src="/afritech-elite/equipes/images/merveille.jpg" alt="Mde Merveille" class="founder-img">
+                    <div class="certified-badge">
+                        <div class="certified-icon">⭐</div>
+                        <div class="certified-text">
+                            <h4></h4>
+                            <p>AfriTech Elite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="team-profile-grid">
+                <!-- CADRE TEXTE À GAUCHE -->
+                <div
+                    style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--cyber-blue-light); border-radius: 18px; padding: 2.5rem;">
+
+                    <div
+                        style="color: var(--cyber-blue-light); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.5rem;">
+
+                    </div>
+                    <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1.25rem;">
+                        Hyacinthe<span style="color: var(--cyber-blue-light);"> KAPUNGWE</span>
+                    </h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 1.5rem;">
+                        Gère la communication de l'organisation, anime les réseaux sociaux, développe la visibilité de la marque et coordonne les campagnes de promotion.
+                    </p>
+                    <a href="#" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <img src="/afritech-elite/equipes/icons/yeux.png" alt="Voir" style="width: 20px; height: 20px;"> Voir
+                    </a>
+                </div>
+                <div class="founder-image-side">
+                    <img src="/afritech-elite/equipes/images/hyacinthe.jpg" alt="Mr Hyacinthe" class="founder-img">
+                    <div class="certified-badge">
+                        <div class="certified-icon">⭐</div>
+                        <div class="certified-text">
+                            <h4></h4>
+                            <p>AfriTech Elite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="team-profile-grid">
+                <!-- CADRE TEXTE À GAUCHE -->
+                <div
+                    style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--cyber-blue-light); border-radius: 18px; padding: 2.5rem;">
+
+                    <div
+                        style="color: var(--cyber-blue-light); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.5rem;">
+
+                    </div>
+                    <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1.25rem;">
+                        Prudence<span style="color: var(--cyber-blue-light);"> KANVI</span>
+                    </h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 1.5rem;">
+                        Conçoit l'architecture technique des formations, supervise les projets pratiques et garantit la qualité des contenus techniques.
+                    </p>
+                    <a href="#" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <img src="/afritech-elite/equipes/icons/yeux.png" alt="Voir" style="width: 20px; height: 20px;"> Voir
+                    </a>
+                </div>
+                <div class="founder-image-side">
+                    <img src="/afritech-elite/equipes/images/prudence.jpg" alt="Mr Prudence" class="founder-img">
+                    <div class="certified-badge">
+                        <div class="certified-icon">⭐</div>
+                        <div class="certified-text">
+                            <h4></h4>
+                            <p>AfriTech Elite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 4rem 0;">
+            <div class="team-profile-grid">
+                <!-- CADRE TEXTE À GAUCHE -->
+                <div
+                    style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-left: 4px solid var(--cyber-blue-light); border-radius: 18px; padding: 2.5rem;">
+
+                    <div
+                        style="color: var(--cyber-blue-light); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.5rem;">
+                    </div>
+                    <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1.25rem;">
+                        Landry<span style="color: var(--cyber-blue-light);"> AZOGAN</span>
+                    </h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1rem; margin-bottom: 1.5rem;">
+                        Développe les partenariats avec les entreprises, les universités et les organisations, et coordonne les opportunités de collaboration.
+                    </p>
+                    <a href="#" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <img src="/afritech-elite/equipes/icons/yeux.png" alt="Voir" style="width: 20px; height: 20px;"> Voir
+                    </a>
+                </div>
+                <div class="founder-image-side">
+                    <img src="/afritech-elite/equipes/images/landry.jpg" alt="Mr Landry" class="founder-img">
+                    <div class="certified-badge">
+                        <div class="certified-icon">⭐</div>
+                        <div class="certified-text">
+                            <h4></h4>
+                            <p>AfriTech Elite</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA REJOINDRE -->
+        <div class="join-cta">
+            <h3> Rejoindre AfriTech Elite</h3>
+            <p>Vous êtes développeur, designer, expert sécurité ou passionné de tech ? Intégrez une communauté d'élite
+                et contribuez à bâtir l'avenir numérique de l'Afrique.</p>
+            <div class="cta-buttons">
+                <a href="/afritech-elite/nous-joindre/index.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Nous
+                    contacter</a>
+                <a href="/afritech-elite/evenements/index.html" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> Voir les
+                    événements</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Pôle d'excellence pour l'émancipation technologique africaine.</p>
+    </footer>
+
+
+    <button id="backToTop" title="Retour en haut">
+    ↑
+</button>
+</body>
+
+</html>

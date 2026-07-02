@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTech Elite - Collectif Numérique d'Excellence</title>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/afritech-elite/accueil/style.css">
+    <script src="/afritech-elite/accueil/script.js" defer></script>
+    
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="nav-container">
+        <div class="logo-block">
+            <img src="/afritech-elite/accueil/icons/logo.jpg" alt="AfriTech Elite" class="brand-logo" width="40" height="40">
+            <span class="logo">AfriTech Elite //</span>
+        </div>
+        <div class="nav-right">
+            <button class="menu-toggle-btn" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNavigation">
+                <img src="/afritech-elite/accueil/icons/menu-deroulant.png" alt="" aria-hidden="true" width="20" height="20"> Menu
+            </button>
+            <nav id="siteNavigation">
+                <ul>
+                    <li><a href="/afritech-elite/accueil/index.html">Accueil</a></li>
+                    <li><a href="/afritech-elite/formations/index.html">Formations</a></li>
+                    <li><a href="/afritech-elite/evenements/index.html">Événements</a></li>
+                    <li><a href="/afritech-elite/equipes/index.html">Équipes</a></li>
+                    <li><a href="/afritech-elite/nous-joindre/index.html">Nous joindre</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+                <img src="/afritech-elite/accueil/icons/nouvelle-lune.png" alt="" aria-hidden="true" width="20" height="20">
+            </button>
+        </div>
+    </div>
+</header>
+<section id="accueil" class="hero">
+    <div class="hero-container">
+        <div class="hero-image-side">
+            <img src="/afritech-elite/accueil/images/afrique.jpg" alt="L'Afrique - AfriTech Elite">
+        </div>
+        <div class="hero-text-side">
+            <h1>Bâtir l'Avenir Numérique de l'<span>Afrique</span></h1>
+            <p>Plateforme d'excellence et réseau d'interconnexion. Nous unissons mentors chevronnés et innovateurs pour
+                propulser les compétences technologiques souveraines du continent.</p>
+            <div class="cta-buttons">
+                <a href="/afritech-elite/formations/index.html" class="btn btn-primary">Explorer nos cursus</a>
+                <a href="/afritech-elite/evenements/index.html" class="btn btn-secondary">Événements</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="founder-section">
+    <div class="founder-container">
+        <div class="founder-text-side">
+            <div class="founder-tagline">À propos de l'équipe</div>
+            <h2>Fondateur d'<span>AfriTech Elite</span></h2>
+            <p class="founder-bio">
+                Cofondateur d'AfriTech Elite, mon ambition est de bâtir la plateforme premium de formation pour
+                l'Afrique francophone. Pensée pour libérer le potentiel technologique de notre continent, notre méthode
+                vous permet de maîtriser pleinement les compétences hautement qualifiées qui ouvrent et dominent les
+                marchés mondiaux actuels.
+            </p>
+            <ul class="founder-skills-list">
+                <li><img src="/afritech-elite/accueil/icons/dev.png" alt="Dev Web" style="width: 20px; height: 20px;"> Dev Web</li>
+                <li><img src="/afritech-elite/accueil/icons/mobile.png" alt="Mobile" style="width: 20px; height: 20px;"> Mobile</li>
+                <li><img src="/afritech-elite/accueil/icons/site-internet.png" alt="Réseau" style="width: 20px; height: 20px;"> Réseau</li>
+                <li><img src="/afritech-elite/accueil/icons/ordinateur-portable.png" alt="Programmation" style="width: 20px; height: 20px;"> Programmation</li>
+                <li><img src="/afritech-elite/accueil/icons/securite-numerique.png" alt="Cybersécurité" style="width: 20px; height: 20px;"> Cybersécurité</li>
+            </ul>
+        </div>
+        <div class="founder-image-side">
+            <img src="/afritech-elite/accueil/images/cofondateur.jpg" alt="Cofondateur AfriTech Elite" class="founder-img">
+            <div class="certified-badge">
+                <div class="certified-icon"></div><img src="/afritech-elite/accueil/icons/certificat.png" alt="Autorisation" style="width: 30px; height: 30px;">
+                <div class="certified-text">
+                    <h4>Certifié AfriTech Elite</h4>
+                    <p>+123 talents formés</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="founder-section" style="border-top: 1px solid var(--border-color);">
+    <div class="founder-container">
+        <div class="founder-text-side">
+            <div class="founder-tagline">À propos de l'équipe</div>
+            <h2>Cofondateur d'<span>AfriTech Elite</span></h2>
+            <p class="founder-bio">
+                En tant que cofondateur passionné par la communication digitale, j'accompagne la croissance d'AfriTech
+                Elite à travers une stratégie de contenu impactante. Mon rôle est de structurer notre branding, de gérer
+                notre présence sur les réseaux sociaux et de traduire nos ambitions technologiques en récits créatifs et
+                engageants. Je complète cette expertise par un apprentissage actif de la programmation.
+            </p>
+            <ul class="founder-skills-list">
+                <li><img src="/afritech-elite/accueil/icons/mobile.png" alt="Mobile" style="width: 20px; height: 20px;"> Social Media Strategy</li>
+                <li><img src="/afritech-elite/accueil/icons/palette-de-peinture.png" alt="Design" style="width: 20px; height: 20px;"> Branding & Design</li>
+                <li><img src="/afritech-elite/accueil/icons/videos.png" alt="Développement Vidéo" style="width: 20px; height: 20px;"> Montage Vidéo</li>
+                <li><img src="/afritech-elite/accueil/icons/ecrire.png" alt="Éditorialiste" style="width: 20px; height: 20px;"> Éditorialiste</li>
+                <li><img src="/afritech-elite/accueil/icons/ordinateur-portable.png" alt="Dev Full Stack" style="width: 20px; height: 20px;"> Débutant Dev</li>
+            </ul>
+        </div>
+        <div class="founder-image-side">
+            <img src="/afritech-elite/accueil/images/sonel.jpg" alt="Cofondateur AfriTech Elite" class="founder-img">
+            <div class="certified-badge">
+                <div class="certified-icon"></div><img src="/afritech-elite/accueil/icons/certificat.png" alt="Autorisation" style="width: 30px; height: 30px;">
+                <div class="certified-text">
+                    <h4>Expert Communication</h4>
+                    <p>Branding & Social Media</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="formations" class="container">
+    <h2>Nos Programmes de Formation</h2>
+    <div class="grid-pillars">
+        <div class="pillar-card">
+            <div class="pillar-icon"><img src="/afritech-elite/accueil/icons/ordinateur-portable.png" alt="Dev Full Stack" style="width: 65px; height: 65px;"></div>
+            <h3>Dev Full Stack</h3>
+            <p>Ingénierie logicielle robuste et architectures modernes modulaires (React, Node.js, API REST).</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon"><img src="/afritech-elite/accueil/icons/autorisation.png" alt="Autorisation" style="width: 65px; height: 65px;"></div>
+            <h3>Cybersécurité</h3>
+            <p>Pentesting éthique, audit de code, gestion de crise et durcissement des systèmes d'information.</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon"><img src="/afritech-elite/accueil/icons/technologie-ia.png" alt="Assistant IA" style="width: 65px; height: 65px;"></div>
+            <h3>Intelligence Artificielle</h3>
+            <p>Traitement de données complexes, modèles prédictifs locaux et automatisation algorithmique.</p>
+        </div>
+        <div class="pillar-card">
+            <div class="pillar-icon"><img src="/afritech-elite/accueil/icons/cloud.png" alt="Cloud" style="width: 65px; height: 65px;"></div>
+            <h3>Systèmes &amp; Cloud</h3>
+            <p>Déploiement d'architectures Cloud hybrides sécurisées et virtualisation d'infrastructures physiques.</p>
+        </div>
+    </div>
+</section>
+
+<section id="evenements" class="container" style="border-top: 1px solid var(--border-color);">
+    <h2>Événements à venir</h2>
+    <div class="events-grid">
+
+        <div class="event-card">
+            <img src="/afritech-elite/evenements/images/trading.jpg" alt="Cours de Trading"
+                style="width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:1rem;">
+            <div class="event-date">Prochainement</div>
+            <h3>Cours de Trading</h3>
+            <p>Apprenez les fondamentaux et les stratégies avancées des marchés financiers lors de notre prochain cursus
+                intensif.</p>
+        </div>
+
+        <div class="event-card">
+            <img src="/afritech-elite/evenements/images/hackathon-ia.jpg" alt="Hackathon IA Entreprise"
+                style="width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:1rem;">
+            <div class="event-date">Prochainement</div>
+            <h3>Hackathon IA Entreprise</h3>
+            <p>Challenge : Concevoir une IA sur-mesure capable d'intégrer et d'analyser l'ensemble des données d'une
+                entreprise pour répondre spécifiquement à ses besoins métiers.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; Pôle d'excellence pour l'émancipation technologique africaine.</p>
+</footer>
+
+<button id="backToTop" title="Retour en haut">
+    ↑
+</button>
+</body>
+
+</html>

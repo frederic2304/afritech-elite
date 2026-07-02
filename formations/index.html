@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - AfriTech Elite</title>
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="/afritech-elite/formations/style.css">
+    <script src="/afritech-elite/formations/script.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+    <div class="nav-container">
+        <div class="logo-block">
+            <img src="/afritech-elite/formations/icons/logo.jpg" alt="AfriTech Elite" class="brand-logo" width="40" height="40">
+            <span class="logo">AfriTech Elite //</span>
+        </div>
+        <div class="nav-right">
+            <button class="menu-toggle-btn" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNavigation">
+                <img src="/afritech-elite/formations/icons/menu-deroulant.png" alt="" aria-hidden="true" width="20" height="20"> Menu
+            </button>
+            <nav id="siteNavigation">
+                <ul>
+                    <li><a href="/afritech-elite/accueil/index.html">Accueil</a></li>
+                    <li><a href="/afritech-elite/formations/index.html">Formations</a></li>
+                    <li><a href="/afritech-elite/evenements/index.html">Événements</a></li>
+                    <li><a href="/afritech-elite/equipes/index.html">Équipes</a></li>
+                    <li><a href="/afritech-elite/nous-joindre/index.html">Nous joindre</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+                <img src="/afritech-elite/formations/icons/nouvelle-lune.png" alt="" aria-hidden="true" width="20" height="20">
+            </button>
+        </div>
+    </div>
+</header>
+
+     <!-- HERO -->
+    <section class="page-hero"></section>
+
+    <main class="main-content">
+
+        <h2 class="section-title">Nos Programmes de Formation</h2>
+
+        <div class="grid-pillars">
+            <div class="pillar-card">
+                <div class="pillar-img-wrapper">
+                    <img src="/afritech-elite/formations/images/fullstack-formation.jpg" alt="Dev Full Stack">
+                </div>
+                <div class="pillar-body">
+                    <h3>Dev Full Stack</h3>
+                    <p>Ingénierie logicielle robuste et architectures modernes modulaires (React, Node.js, API REST).
+                    </p>
+                    <a href="#" class="pillar-cta">En savoir plus</a>
+                </div>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img-wrapper">
+                    <img src="/afritech-elite/formations/images/cybersecurity-formation.jpg" alt="Cybersécurité">
+                </div>
+                <div class="pillar-body">
+                    <h3>Cybersécurité</h3>
+                    <p>Pentesting éthique, audit de code, gestion de crise et durcissement des systèmes d'information.
+                    </p>
+                    <a href="#" class="pillar-cta">En savoir plus</a>
+                </div>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img-wrapper">
+                    <img src="/afritech-elite/formations/images/ai-formation.jpg" alt="Intelligence Artificielle">
+                </div>
+                <div class="pillar-body">
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Traitement de données complexes, modèles prédictifs locaux et automatisation algorithmique.</p>
+                    <a href="#" class="pillar-cta">En savoir plus</a>
+                </div>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img-wrapper">
+                    <img src="/afritech-elite/formations/images/cloud-formation.jpg" alt="Cloud">
+                </div>
+                <div class="pillar-body">
+                    <h3>Systèmes &amp; Cloud</h3>
+                    <p>Déploiement d'architectures Cloud hybrides sécurisées et virtualisation d'infrastructures
+                        physiques.</p>
+                    <a href="#" class="pillar-cta">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- APPEL À L'ACTION -->
+        <div class="newsletter-box">
+
+            <h3>
+                Prêt à développer vos compétences ?
+            </h3>
+
+            <p>
+                Rejoignez AfriTech Elite et bénéficiez de formations de qualité,
+                en présentiel ou en ligne, animées par des professionnels du secteur.
+            </p>
+
+            <div class="newsletter-form">
+                <button class="btn-primary">
+                    S'inscrire à une formation
+                </button>
+
+                <button class="btn-secondary">
+                    Demander des informations
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Pôle d'excellence pour l'émancipation technologique africaine.</p>
+    </footer>
+
+    <button id="backToTop" title="Retour en haut">
+    ↑
+</button>
+</body>
+
+</html>
